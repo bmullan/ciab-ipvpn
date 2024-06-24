@@ -13,7 +13,7 @@ var configInstance atomic.Value
 
 type config struct {
 	DataDirectory             string `env:"IPVPN_DATADIR" envDefault:"${HOME}/.ipvpn"`
-	NetworkSubnet             string `env:"IPVPN_NETWORK_SUBNET" envDefault:"10.197.204.0/22"`
+	NetworkSubnet             string `env:"IPVPN_NETWORK_SUBNET" envDefault:"172.16.0.0/12"`
 	DumpVPNCommunications     bool   `env:"IPVPN_NETWORK_DUMP_VPN"`
 	DumpNetworkCommunications bool   `env:"IPVPN_NETWORK_DUMP_MESH"`
 	DumpConfiguration         bool   `env:"IPVPN_DUMP_CONFIG"`
